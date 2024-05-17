@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <script src="myscript.js"></script>
+    <h1>
+        Calculator
+    </h1>
+    <div class="Cal">
+        <div class="num">
+            <label class="leb" for="num_1">Number 1</label><br>
+
+            <textarea cols="10" id="num_1" rows="1" name="numbers" placeholder="00" required></textarea>
+
+            <br><br>
+            <label class="leb" for="num_2">Number 2</label><br>
+
+            <textarea cols="10" id="num_2" rows="1" name="numbers" placeholder="00"></textarea>
+            <br><br>
+        </div>
+        <button class="numerical" onclick=add()>+</button>
+        <button class="numerical" onclick=sub()>-</button>
+        <button class="numerical" onclick=div()>/</button>
+        <button class="numerical" onclick=mul()>*</button><br><br>
+        <h2 id="answer"></h2>
+    </div>
+</body>
+
+</html>
+
+<!--
+   
+    let num1 = parseFloat(document.getElementById("num_1").value);
+    document.getElementsById('next2').style.backgroundColor = 'red';
+    let num2 = parseFloat(document.getElementById("num_2").value);
+    document.getElementsByClassName('numerical').style.backgroundColor = 'red';
+let ans;
+    function add(a, b) {
+        ans= a + b;
+    }
+    function sub(a, b) {
+        ans= a - b;
+    }
+    function div(a, b) {
+        ans= a / b;
+    }
+    function mul(a, b) {
+        ans= a * b;
+}
+    
+document.getElementById('answer').innerHTML = "Answer is:" + ans;
+    
+
+-->
